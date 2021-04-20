@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/3.css">
+<title>My Profil</title>
+<style type="text/css">
+			#darkmode{
+				background: #2E2E2E;
+				color: white;
+			}
+    </style>
+
+</head>
+<body>
+<div class="utama">
+<div class="wrap">
+<h1 class="class" align="center">PROFIL</h1><hr/ align="center" width="25%" style="border-top: 10px double #8c8b8b;">
+<table>
+<tr><td rowspan="50" width="100px">
+<img src="gambar/foto.PNG"width="200px" style="display: block;
+border-radius: 50%;
+border-color:white;
+margin-right:50px" border="2px" ></td></tr>
+
+<tr><td><b><h3>Nama</h3></b></td><td>:</td>      <td><h3>Khusna Mutabiatul Afifah</h3></td></tr>
+<tr><td><b><h3>Umur</h3></b></td><td>:</td>      <td><h3>20</h3></td></tr>
+<tr><td><b><h3>NIM</h3></b></td><td>:</td>       <td><h3>201910370311189</h3></td></tr>
+<tr><td><b><h3>Jurusan</h3></b></td><td>:</td>   <td><h3>Informatika</h3></td></tr>
+<tr><td><b><h3>Fakultas</h3></b></td><td>:</td>  <td><h3>Teknik</h3></td></tr>
+<tr><td><b><h3>Alamat</h3></b></td><td>:</td>    <td><h3>Kalimantan Timur</h3></td></tr></table>
+<div>
+
+		<style>
+			#darkmode{
+				background: #2E2E2E;
+				color: white;
+			}
+		</style>
+
+		<script>
+			if(localStorage.getItem('theme') == 'dark')
+				setDarkMode(true)
+
+			function setDarkMode(isDark){
+				if(isDark){
+					document.body.setAttribute('id', 'darkmode')
+					localStorage.setItem('theme', 'dark')
+
+
+				}else{
+					document.body.setAttribute('id', '')
+					localStorage.removeItem('theme')
+
+				}
+
+			}
+
+
+		</script>
+</body>
+</html>

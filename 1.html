@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Pendidikan</title>
+    <link rel="stylesheet" href="css/3.css">
+</head>
+<body> 
+    <div> 
+        <header>
+            <h2>Berita tentang Pendidikan di Indonesia</h2>
+        </header>
+ 
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active">
+                <li><a href="todo-form.html">TODO List</a></li>
+				<li><a href="#">Olahraga</a></li>
+				<li><a href="#">Pendidikan</a></li>
+				<li><a href="#">Ekonomi</a></li>
+				<li><a href="#">Teknologi</a></li>
+				<li><a href="#">Entertaiment</a></li>
+                <li><a href="2.html">Profil</a></li>
+            </ul>
+        </nav>
+
+        <div class="gambar">
+            <img src="gambar/pendidikan.JPG">
+        </div>
+ 
+        <div class="bagiankiri">
+            <div class="sidebarKiri">
+                <a href="#11">Sekolah</a>
+            </div>
+			
+		 <div class="sidebarKiri">
+                <a href="#11">Perguruan Tinggi</a>
+            </div>
+			
+			 <div class="sidebarKiri">
+                <a href="#11">Pendidikan Khusus</a>
+            </div>
+			
+			 <div class="sidebarKiri">
+                <a href="#11">Beasiswa</a>
+            </div>
+			
+			 <div class="sidebarKiri">
+                <a href="#11">Dunia Kuliah</a>
+            </div>
+			
+			 <div class="sidebarKiri">
+                <a href="#11">Kilas Pendidikan</a>
+            </div>
+			<h5>Mode</h5>
+		<p>
+			<span class="icon" onclick="setDarkMode(false)"><button>Light</button></span>
+			<span class="icon" onclick="setDarkMode(true)"><button>Dark</button></span>
+		</p>
+
+		<style>
+			#darkmode{
+				background: #2E2E2E;
+				color: white;
+			}
+		</style>
+
+		<script>
+			if(localStorage.getItem('theme') == 'dark')
+				setDarkMode(true)
+
+			function setDarkMode(isDark){
+				if(isDark){
+					document.body.setAttribute('id', 'darkmode')
+					localStorage.setItem('theme', 'dark')
+
+
+				}else{
+					document.body.setAttribute('id', '')
+					localStorage.removeItem('theme')
+
+				}
+
+			}
+
+
+		</script>
+		
+		</div>
+		
+        <div class="tengah">
+            <div class="kotakTengah">
+                <h3>Covid-19: Sekolah dengan pembelajaran tatap muka akan dibuka lagi di tengah tingkat infeksi yang masih tinggi</h3>
+                <span class="tanggal-posting">
+                    24 Maret 2021
+                </span>
+ 
+                <img src="gambar/covid.JPG">
+ 
+                <div class="teksBerita">
+				<p>
+                    Di tengah bergulirnya vaksinasi terhadap lima juta pendidik dan tenaga pendidik yang 
+					dimulai Februari lalu dan ditargetkan selesai pada akhir Juni, pemerintah Indonesia 
+					merencanakan pembukaan pembelajaran tatap muka (PTM) pada Juli, saat pembukaan ajaran baru.
+                </p>
+				</div>
+ 
+                <a href="#11">Selanjutnya >></a>
+            </div>
+			
+			<div class="kotakTengah">
+                <h3>Untuk Siswa dan Mahasiswa, Beasiswa Pendidikan Pemuda Indonesia (PPI) Buka 4 Jalur</h3>
+                <span class="tanggal-posting">
+                    Liputan6.com 29 Mar 2021, 16:26 WIB
+                </span>
+ 
+                <img src="gambar/beasiswa.PNG">
+ 
+                 <div class="teksBerita">
+				<p>
+                   Melalui Beasiswa Peendidikan Pemuda Indonesia (PPI) merupakan wujud dukungan dari 
+				   Event Hunter Indonesia bagi generasi muda khususnya para pelajar dan mahasiswa. 
+				   Harapan dari diselenggarakannya Beasiswa Pendidikan Pemuda Indonesia ini adalah pemuda 
+				   Indonesia dapat memaksimalkan potensi akademik mereka tanpa terkendala biaya pendidikan.
+                </p>
+				</div>
+                <a href="#11">Selanjutnya >></a>
+            </div>
+			
+			<div class="kotakTengah">
+                <h3>Pendidikan adalah Proses Pengubahan Sikap, Kenali Pengertiannya Menurut Para Ahli</h3>
+                <span class="tanggal-posting">
+                    Husnul Abdi, 20 Maret 2021, 17:00 WIB
+                </span>
+ 
+                <img src="gambar/siswa.JPG">
+ 
+                 <div class="teksBerita">
+				<p>
+                   Pendidikan adalah pembelajaran pengetahuan, keterampilan, dan 
+				   kebiasaan sekelompok orang yang diturunkan dari satu generasi ke 
+				   generasi berikutnya melalui pengajaran, pelatihan, atau penelitian. 
+				   Pendidikan dapat terjadi di bawah bimbingan orang lain ataupun secara otodidak atau belajar sendiri. 
+                </p>
+				</div>
+				 <a href="#11">Selanjutnya >></a>
+				 
+            </div>
+			
+			
+        </div>
+ 
+        <div class="bagiankanan">
+            <div class="sidebarKanan">      
+             <form>               
+				<input class="search" type="search" placeholder="Search...">               
+				<input class="button" type="submit" value="Search">       
+			 </form>     
+				<h3>Berita Terkini</h3>
+                <img src="gambar/pt.JPG" alt="update">
+ 
+                <h4 align="center">26 Maret 2021</h4>
+                <center>
+                    <p>Daftar Perguruan Tinggi Indonesia dengan Situs Web dan Media Sosial Terbaik</p>
+                </center>
+            </div>
+			
+            <div class="sidebarKanan">
+                <h3>Berita Terbaru</h3>
+ 
+                <nav class="menu-artikel">
+                    <ul>
+                        <li><a href="#">Peserta SNMPTN 2021 Sudah Mencapai 101.459 Orang</a></li>
+                        <li><a href="#">Saat Siswa-Siswa di Halmahera Harus Ujian di Bawah Pohon Kelapa</a></li>
+                        <li><a href="#">Mengenal Lebih Peran Geolog untuk Mempelajari Energi Panas Bumi</a></li>
+                        <li><a href="#">Pendidikan adalah Proses Pengubahan Sikap, Kenali Pengertiannya Menurut Para Ahli</a></li>
+                        <li><a href="#">Beasiswa Pertamina 2021 D3 dan S1, Ini Link Pendaftaran dan Syaratnya</a></li>
+                    
+					</ul>
+					
+                </nav>
+            </div>
+        </div>
+		
+		<footer>
+            Copyright © 2021 | Powered by KhusnaMA
+        </footer>
+   
+ 
+    </div>
+ 
+</body>
+</html>
